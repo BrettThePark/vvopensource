@@ -99,3 +99,5 @@ HOW TO USE THIS CLASS:
 @property (readonly) NSButton *replyButton;
 
 @end
+
+bool VVLoadMemory(void *mem, long size);
