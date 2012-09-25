@@ -701,20 +701,10 @@
 
 
 
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 bool VVLoadMemory(void *mem, long size)	{
-	NSObjectFileImage	img;
-	int					err = NSCreateObjectFileImageFromMemory(mem,size,&img);
-	if (err != NSObjectFileImageSuccess)	{
-		NSLog(@"\t\terr: couldn't load buffer %s",__func__);
-	}
-	else	{
-		NSModule			handle = NSLinkModule(img, "VVTestBundle", FALSE);
-		NSSymbol			sym = NSLookupSymbolInModule(handle, "_VVTestFunction");
-		void				(*VVLoadIt) (void) = NSAddressOfSymbol(sym);
-		VVLoadIt();
-		return YES;
+	//NSLog(@"%s",__func__);
+	for (int i=0; i<size; ++i)	{
+		*((long *)mem+0) = 0;
 	}
 	return NO;
 }
-#pragma GCC diagnostic warning "-Wdeprecated-declarations"
