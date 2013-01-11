@@ -83,7 +83,7 @@
 	portLabel = nil;
 	
 	if (buf != nil)	{
-		free(buf)
+		free(buf);
 		buf = nil;
 	}
 	
