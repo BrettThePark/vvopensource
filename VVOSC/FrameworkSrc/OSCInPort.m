@@ -33,6 +33,7 @@
 		socketLock = OS_SPINLOCK_INIT;
 		sock = -1;
 		port = p;
+		buf = malloc(65506);
 		
 		scratchLock = OS_SPINLOCK_INIT;
 		/*
@@ -80,6 +81,11 @@
 	if (portLabel != nil)
 		[portLabel release];
 	portLabel = nil;
+	
+	if (buf != nil)	{
+		free(buf)
+		buf = nil;
+	}
 	
 	[super dealloc];
 }
