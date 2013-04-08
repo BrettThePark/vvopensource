@@ -2533,7 +2533,7 @@
 					"-DIPHONE",
 				);
 				PRODUCT_NAME = VVOSC;
-				SDKROOT = iphonesimulator5.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -2549,7 +2549,7 @@
 					"-DIPHONE",
 				);
 				PRODUCT_NAME = VVOSC;
-				SDKROOT = iphonesimulator5.1;
+				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2567,7 +2567,8 @@
 					"-DIPHONE",
 				);
 				PRODUCT_NAME = VVOSC;
-				SDKROOT = iphoneos5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -2584,7 +2585,8 @@
 					"-DIPHONE",
 				);
 				PRODUCT_NAME = VVOSC;
-				SDKROOT = iphoneos5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = i386;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2612,7 +2614,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VVOSC;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -2636,7 +2638,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VVOSC;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2740,7 +2742,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "-DIPHONE";
 				PRODUCT_NAME = VVBasics;
-				SDKROOT = iphonesimulator5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -2753,7 +2756,8 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "-DIPHONE";
 				PRODUCT_NAME = VVBasics;
-				SDKROOT = iphonesimulator5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = i386;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2769,7 +2773,8 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_CFLAGS = "-DIPHONE";
 				PRODUCT_NAME = VVBasics;
-				SDKROOT = iphoneos5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = i386;
 			};
 			name = Debug;
 		};
@@ -2783,7 +2788,8 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				OTHER_CFLAGS = "-DIPHONE";
 				PRODUCT_NAME = VVBasics;
-				SDKROOT = iphoneos5.1;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = i386;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2813,7 +2819,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VVBasics;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -2839,7 +2845,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VVBasics;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -3022,7 +3028,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VVMIDI;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -3046,7 +3052,7 @@
 					AppKit,
 				);
 				PRODUCT_NAME = VVMIDI;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
